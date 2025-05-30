@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Journal du Politique</title>
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/base.css" />
+    <link rel="stylesheet" href="style/slide.css" />
+
+  </head>
+  <body>
+    <!-- Enhanced Header -->
+    <header class="header">
+      <div class="top-bar">
+        <div class="top-bar-left">
+          📍 Actualités politiques françaises en temps réel
+        </div>
+        <div class="top-bar-right">
+          <span>🔔 Notifications</span>
+          <span>📧 Newsletter</span>
+        </div>
+      </div>
+      <div class="nav-container">
+        <div class="logo">Journal du Politique</div>
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-active">ACCUEIL</a></li>
+            <li><a href="avis.html">VOS AVIS</a></li>
+            <li><a href="elus.html">VOS ÉLUS</a></li>
+            <li><a href="cartes.html">CARTES ÉLECTORALES</a></li>
+            <li><a href="collectivites.html">COLLECTIVITÉS</a></li>
+            <li><a href="annuaire.html">ANNUAIRE</a></li>
+          </ul>
+        </nav>
+        <div class="">
+          <button class="login-btn">Espace Abonné</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Enhanced Hero Section -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-subtitle">Plateforme citoyenne interactive</div>
+        <h1>La démocratie à portée de clic</h1>
+        <p>
+          Actualités politiques, sondages citoyens, données électorales et
+          outils participatifs pour une citoyenneté éclairée et engagée
+        </p>
+        <div class="search-box">
+          <input type="text" placeholder="Rechercher un élu, une commune..." />
+        </div>
+        <div class="cta-buttons">
+          <a href="#" class="cta-btn primary">Dévenir societaire</a>
+          <a href="#" class="cta-btn">Devenir membre premium</a>
+        </div>
+      </div>
+
+      <div class="slideshow-container">
+        <div class="progress-bar"></div>
+
+        <div class="slide-counter">
+          <span id="current-slide">1</span> / <span id="total-slides">5</span>
+        </div>
+
+        <div class="slide active">
+          <div class="slide-content">
+            <h2 class="slide-title">Paysages Magnifiques</h2>
+            <p class="slide-description">
+              Découvrez la beauté naturelle de nos montagnes majestueuses, où
+              chaque lever de soleil peint le ciel de couleurs extraordinaires.
+            </p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-content">
+            <h2 class="slide-title">Architecture Moderne</h2>
+            <p class="slide-description">
+              L'art de construire rencontre l'innovation dans ces structures
+              contemporaines qui redéfinissent nos horizons urbains.
+            </p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-content">
+            <h2 class="slide-title">Océans Infinis</h2>
+            <p class="slide-description">
+              Plongez dans l'immensité bleue de nos océans, où la tranquillité
+              rencontre la puissance de la nature marine.
+            </p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-content">
+            <h2 class="slide-title">Forêts Enchantées</h2>
+            <p class="slide-description">
+              Explorez des forêts mystérieuses où la lumière filtrée crée une
+              atmosphère magique et apaisante.
+            </p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-content">
+            <h2 class="slide-title">Couchers de Soleil</h2>
+            <p class="slide-description">
+              Terminez chaque journée en beauté avec ces couchers de soleil
+              spectaculaires qui embrasent l'horizon.
+            </p>
+          </div>
+        </div>
+
+        <div class="slide-indicators">
+          <div class="indicator active" onclick="goToSlide(0)"></div>
+          <div class="indicator" onclick="goToSlide(1)"></div>
+          <div class="indicator" onclick="goToSlide(2)"></div>
+          <!-- <div class="indicator" onclick="goToSlide(3)"></div>
+          <div class="indicator" onclick="goToSlide(4)"></div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="content-grid">
+        <!-- News Feed -->
+        <section class="news-feed">
+          <div class="premium-badge">✨ PREMIUM</div>
+          <h2>Fil d'actualité des élus</h2>
+          <p>
+            Suivez en temps réel les déclarations, votes et prises de position
+            de vos représentants élus. Un accès direct à l'information politique
+            sans filtre.
+          </p>
+          <div class="news-item">
+            <div class="news-meta">
+              Il y a 2h • Député de la 3ème circonscription
+            </div>
+            <div class="news-content">
+              "Position sur le projet de loi climat : nécessité d'aller plus
+              loin dans les mesures..."
+            </div>
+          </div>
+          <div class="news-item">
+            <div class="news-meta">
+              Il y a 2h • Marie Dupont, Député de la 3ème circonscription du
+              Nord
+            </div>
+            <div class="news-content">
+              "Suite aux dernières annonces gouvernementales sur la réforme des
+              retraites, je tiens à préciser ma position et celle de mon groupe
+              parlementaire..."
+            </div>
+          </div>
+          <div class="news-item">
+            <div class="news-meta">Il y a 4h • Jean Martin, Maire de Lille</div>
+            <div class="news-content">
+              "Le budget 2025 de notre commune privilégiera l'environnement et
+              la transition écologique. Détails des investissements prévus..."
+            </div>
+          </div>
+        </section>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <!-- Latest Poll -->
+          <div class="widget">
+            <h3>Dernier sondage</h3>
+            <p>
+              <strong
+                >Quelle est votre principale préoccupation actuelle ?</strong
+              >
+            </p>
+            <div class="poll-result">
+              <span>Pouvoir d'achat</span>
+              <div class="poll-bar">
+                <div class="poll-fill" style="width: 45%"></div>
+              </div>
+              <span>45%</span>
+            </div>
+            <div class="poll-result">
+              <span>Environnement</span>
+              <div class="poll-bar">
+                <div class="poll-fill" style="width: 28%"></div>
+              </div>
+              <span>28%</span>
+            </div>
+            <div class="poll-result">
+              <span>Sécurité</span>
+              <div class="poll-bar">
+                <div class="poll-fill" style="width: 27%"></div>
+              </div>
+              <span>27%</span>
+            </div>
+          </div>
+
+          <div class="widget">
+            <h3>Pétitions populaires</h3>
+            <div
+              style="
+                margin-bottom: 1.5rem;
+                padding: 1rem;
+                background: var(--light-gray);
+                border-radius: 8px;
+              "
+            >
+              <strong
+                >Pour une meilleure accessibilité des transports publics</strong
+              ><br />
+              <small style="color: var(--medium-gray)"
+                >Lancée par l'Association des Personnes Handicapées</small
+              ><br />
+              <div style="margin-top: 0.5rem">
+                <strong style="color: var(--gold-accent)"
+                  >3,847 signatures</strong
+                >
+                • Il manque <strong>1,153 signatures</strong>
+              </div>
+              <div
+                style="
+                  background: #e5e7eb;
+                  height: 6px;
+                  border-radius: 3px;
+                  margin-top: 0.5rem;
+                "
+              >
+                <div
+                  style="
+                    background: var(--gold-accent);
+                    height: 100%;
+                    width: 77%;
+                    border-radius: 3px;
+                  "
+                ></div>
+              </div>
+            </div>
+            <div
+              style="
+                padding: 1rem;
+                background: #f0f9ff;
+                border-radius: 8px;
+                border-left: 4px solid #0ea5e9;
+              "
+            >
+              <strong>Réforme du système de retraites</strong><br />
+              <small style="color: var(--medium-gray)"
+                >Lancée par le Collectif Retraites</small
+              ><br />
+              <div style="margin-top: 0.5rem">
+                <strong style="color: #059669">7,234 signatures</strong> •
+                <strong style="color: #059669">Objectif atteint ✓</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Enhanced Monthly Concerns Widget -->
+          <div class="widget">
+            <h3>Tendances du mois</h3>
+            <div
+              style="
+                background: var(--light-gray);
+                padding: 1rem;
+                border-radius: 8px;
+              "
+            >
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 0.8rem;
+                  padding: 0.5rem;
+                  background: white;
+                  border-radius: 4px;
+                "
+              >
+                <span><strong>Inflation</strong></span>
+                <span style="color: #dc2626; font-weight: bold">↗ +12%</span>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 0.8rem;
+                  padding: 0.5rem;
+                  background: white;
+                  border-radius: 4px;
+                "
+              >
+                <span><strong>Logement</strong></span>
+                <span style="color: #dc2626; font-weight: bold">↗ +8%</span>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  padding: 0.5rem;
+                  background: white;
+                  border-radius: 4px;
+                "
+              >
+                <span><strong>Emploi</strong></span>
+                <span style="color: #059669; font-weight: bold">↘ -3%</span>
+              </div>
+            </div>
+            <p
+              style="
+                margin-top: 1rem;
+                font-size: 0.85rem;
+                color: var(--medium-gray);
+                font-style: italic;
+              "
+            >
+              Basé sur l'analyse de 15,000+ contributions citoyennes ce mois-ci
+            </p>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Features Grid -->
+      <section class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🗳️</div>
+          <h3>Vos avis comptent</h3>
+          <p>
+            Créez des pétitions, participez aux sondages et exprimez vos
+            préoccupations. Votre voix est entendue et transmise aux décideurs.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">👥</div>
+          <h3>Transparence des élus</h3>
+          <p>
+            Accédez aux fiches détaillées de vos représentants, suivez leurs
+            actions et communiquez directement avec eux.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Données électorales</h3>
+          <p>
+            Explorez les résultats électoraux depuis 2012, analysez les
+            tendances et comprenez les dynamiques politiques locales.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🏛️</div>
+          <h3>Collectivités locales</h3>
+          <p>
+            Découvrez les budgets, projets et performances de votre commune,
+            département et région avec des données actualisées.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Journal du Politique</h4>
+          <a href="#">À propos</a>
+          <a href="#">Notre mission</a>
+          <a href="#">Équipe</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-section">
+          <h4>Services</h4>
+          <a href="#">Abonnement Premium</a>
+          <a href="#">API données</a>
+          <a href="#">Partenariats</a>
+          <a href="#">Documentation</a>
+        </div>
+        <div class="footer-section">
+          <h4>Ressources</h4>
+          <a href="#">Guide utilisateur</a>
+          <a href="#">FAQ</a>
+          <a href="#">Blog</a>
+          <a href="#">Newsletter</a>
+        </div>
+        <div class="footer-section">
+          <h4>Légal</h4>
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">CGU</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Journal du Politique. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Simple interactions
+      document.addEventListener("DOMContentLoaded", function () {
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute("href"));
+            if (target) {
+              target.scrollIntoView({
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+
+        // Search input focus effects
+        const searchInput = document.querySelector(".search-box input");
+        searchInput.addEventListener("focus", function () {
+          this.parentElement.style.transform = "scale(1.05)";
+        });
+
+        searchInput.addEventListener("blur", function () {
+          this.parentElement.style.transform = "scale(1)";
+        });
+
+        // Animate poll bars on load
+        setTimeout(() => {
+          document.querySelectorAll(".poll-fill").forEach((bar) => {
+            const width = bar.style.width;
+            bar.style.width = "0%";
+            setTimeout(() => {
+              bar.style.width = width;
+            }, 100);
+          });
+        }, 500);
+      });
+    </script>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const indicators = document.querySelectorAll('.indicator');
+        const totalSlides = slides.length;
+        let slideInterval;
+
+        function showSlide(index) {
+            // Masquer toutes les slides
+            slides.forEach(slide => slide.classList.remove('active'));
+            indicators.forEach(indicator => indicator.classList.remove('active'));
+
+            // Afficher la slide actuelle
+            slides[index].classList.add('active');
+            indicators[index].classList.add('active');
+
+            // Mettre à jour le compteur
+            document.getElementById('current-slide').textContent = index + 1;
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            showSlide(currentSlide);
+            
+            // Redémarrer l'intervalle
+            clearInterval(slideInterval);
+            startSlideshow();
+        }
+
+        function startSlideshow() {
+            slideInterval = setInterval(nextSlide, 4000);
+        }
+
+        // Initialiser
+        document.getElementById('total-slides').textContent = totalSlides;
+        startSlideshow();
+
+        // Pause au survol (optionnel)
+        const container = document.querySelector('.slideshow-container');
+        container.addEventListener('mouseenter', () => {
+            clearInterval(slideInterval);
+        });
+
+        container.addEventListener('mouseleave', () => {
+            startSlideshow();
+        });
+    </script>
+  </body>
+</html>

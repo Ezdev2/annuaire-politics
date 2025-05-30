@@ -1,0 +1,40 @@
+main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      border-left: 5px solid crimson;
+      padding-left: 0.5rem;
+    }
+
+    .bloc {
+      background: #f8f8f8;
+      padding: 1.5rem;
+      border-radius: 6px;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    th, td {
+      padding: 0.8rem;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background-color: #eee;
+      font-weight: 600;
+    }
+
+    .recherche {
+      margin-bottom: 1rem;
+    }
