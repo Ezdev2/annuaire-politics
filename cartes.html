@@ -39,50 +39,242 @@
       </div>
     </header>
 
-    <main>
-      <h2>🗺️ Cartes électorales</h2>
-
-      <section class="bloc">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>🗺️ Cartes Électorales Interactives</h1>
         <p>
-          Accédez aux résultats électoraux des 30 dernières années, par bureau
-          de vote, commune, département, région ou à l’échelle nationale. Pour
-          chaque élection (Municipales, Législatives, Présidentielles,
-          Européennes…), visualisez :
+          Explorez 30 années de données électorales françaises avec une
+          précision inégalée. Du bureau de vote à l'échelle nationale, analysez
+          tous les scrutins depuis 1994.
         </p>
-        <ul>
-          <li>Taux de participation et d’abstention</li>
-          <li>Résultats par candidats et tendances politiques</li>
-          <li>Comparaison des élections passées</li>
-        </ul>
+      </div>
+    </section>
+
+    <div class="main-container">
+      <!-- Search and Filter Section -->
+      <section class="search-section">
+        <h2 class="search-title">🔍 Recherche Avancée</h2>
+        <div class="search-filters">
+          <div class="filter-group">
+            <label for="election-type">Type d'élection</label>
+            <select id="election-type">
+              <option value="">Toutes les élections</option>
+              <option value="presidentielles">Présidentielles</option>
+              <option value="legislatives">Législatives</option>
+              <option value="municipales">Municipales</option>
+              <option value="departementales">Départementales</option>
+              <option value="regionales">Régionales</option>
+              <option value="europeennes">Européennes</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="location">Localisation</label>
+            <input
+              type="text"
+              id="location"
+              placeholder="Commune, département, région..."
+            />
+          </div>
+          <div class="filter-group">
+            <label for="year">Année</label>
+            <select id="year">
+              <option value="">Toutes les années</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2017">2017</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="tendance">Tendance politique</label>
+            <select id="tendance">
+              <option value="">Toutes les tendances</option>
+              <option value="extreme-gauche">Extrême-gauche</option>
+              <option value="gauche">Gauche</option>
+              <option value="ecologistes">Écologistes</option>
+              <option value="centre">Centre</option>
+              <option value="droite">Droite</option>
+              <option value="extreme-droite">Extrême-droite</option>
+            </select>
+          </div>
+        </div>
+        <button class="search-btn">🔍 Rechercher les données</button>
       </section>
 
-      <section class="bloc">
-        <p>Visualisation (fictive) d’une carte électorale :</p>
-        <img
-          src="images/carte_electorale_exemple.png"
-          alt="Carte électorale fictive"
-        />
-        <p style="font-size: 0.9rem; color: #555">
-          (Remplacer par une carte dynamique ou vraie image plus tard)
-        </p>
+      <!-- Statistics Overview -->
+      <section class="stats-section">
+        <div class="stat-card">
+          <div class="stat-number">67,000+</div>
+          <div class="stat-label">Bureaux de vote</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">35,000+</div>
+          <div class="stat-label">Communes</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">30+</div>
+          <div class="stat-label">Années de données</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Types d'élections</div>
+        </div>
       </section>
 
-      <section class="bloc">
-        <h3>🔍 Zoom par tendance politique</h3>
-        <ul>
-          <li>Extrême-gauche</li>
-          <li>Gauche</li>
-          <li>Écologistes</li>
-          <li>Centre</li>
-          <li>Droite</li>
-          <li>Extrême-droite</li>
-        </ul>
+      <!-- Features Grid -->
+      <section class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Analyse par Bureau de Vote</h3>
+          <p>
+            Accédez aux résultats détaillés de chaque bureau de vote en France.
+            Taux de participation, répartition des voix, évolution dans le
+            temps.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3>Comparaison Géographique</h3>
+          <p>
+            Comparez les résultats entre communes, départements et régions.
+            Identifiez les tendances territoriales et les spécificités locales.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📈</div>
+          <h3>Évolution Temporelle</h3>
+          <p>
+            Suivez l'évolution des tendances politiques sur 30 ans. Analysez les
+            dynamiques électorales et les changements de comportement.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌈</div>
+          <h3>Visualisation Interactive</h3>
+          <p>
+            Cartes dynamiques, graphiques interactifs et tableaux de bord
+            personnalisables pour une analyse approfondie.
+          </p>
+        </div>
+      </section>
+
+      <!-- Map Preview -->
+      <section class="map-preview">
+        <h2>Aperçu de la Carte Interactive</h2>
+        <div
+          class="map-container"
+          style="
+            position: relative;
+            width: 100%;
+            height: 400px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+          "
+        >
+          <iframe
+            src="https://umap.openstreetmap.fr/fr/map/france-regions-departements_123456?scaleControl=true&miniMap=true&scrollWheelZoom=false&zoomControl=true&allowEdit=false"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            allowfullscreen
+            loading="lazy"
+          >
+          </iframe>
+        </div>
         <p>
-          Chaque nuance pourra être visualisée séparément dans la version
-          interactive du site.
+          Cliquez sur une région, département ou commune pour afficher les
+          résultats détaillés.
+        </p>
+        <p><em>Version interactive disponible après connexion</em></p>
+        <p>
+          La carte permet de naviguer du niveau national jusqu'au bureau de vote
+          avec un simple clic.
         </p>
       </section>
-    </main>
+
+      <!-- Data Categories -->
+      <section class="data-section">
+        <h2>📋 Données Disponibles par Élection</h2>
+        <div class="data-categories">
+          <div class="category-card">
+            <h4>🏛️ Élections Nationales</h4>
+            <ul>
+              <li>Présidentielles (1995-2022)</li>
+              <li>Législatives (1997-2022)</li>
+              <li>Européennes (1999-2019)</li>
+              <li>Référendums (1992-2005)</li>
+            </ul>
+          </div>
+          <div class="category-card">
+            <h4>🏘️ Élections Locales</h4>
+            <ul>
+              <li>Municipales (1995-2020)</li>
+              <li>Départementales (1994-2021)</li>
+              <li>Régionales (1998-2021)</li>
+              <li>Intercommunales (2008-2020)</li>
+            </ul>
+          </div>
+          <div class="category-card">
+            <h4>📊 Variables Disponibles</h4>
+            <ul>
+              <li>Nombre de voix absolues</li>
+              <li>Pourcentages par candidat</li>
+              <li>Taux de participation</li>
+              <li>Taux d'abstention</li>
+              <li>Votes blancs et nuls</li>
+            </ul>
+          </div>
+          <div class="category-card">
+            <h4>🎨 Modes d'Agrégation</h4>
+            <ul>
+              <li>Par candidats individuels</li>
+              <li>Par nuances politiques</li>
+              <li>Par tendances larges</li>
+              <li>Par coalitions</li>
+              <li>Analyse comparative</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Premium Section -->
+      <section class="premium-section">
+        <h2>✨ Version Premium</h2>
+        <p>Accédez à des analyses avancées et des données exclusives</p>
+        <div class="premium-features">
+          <div class="premium-feature">
+            <h4>📈 Force Électorale</h4>
+            <p>
+              Calcul de la force électorale de chaque tendance par territoire
+            </p>
+          </div>
+          <div class="premium-feature">
+            <h4>🔄 Évolution Détaillée</h4>
+            <p>Suivi précis de l'évolution de chaque tendance politique</p>
+          </div>
+          <div class="premium-feature">
+            <h4>👥 Données Sociologiques</h4>
+            <p>Croisement avec les données démographiques et économiques</p>
+          </div>
+          <div class="premium-feature">
+            <h4>📊 Analyses Prédictives</h4>
+            <p>Modèles de prédiction basés on l'historique électoral</p>
+          </div>
+          <div class="premium-feature">
+            <h4>📤 Export Données</h4>
+            <p>Téléchargement des données en CSV, Excel, JSON</p>
+          </div>
+          <div class="premium-feature">
+            <h4>🔧 API Accès</h4>
+            <p>Accès API pour intégrer les données dans vos applications</p>
+          </div>
+        </div>
+        <button class="upgrade-btn">🚀 Passer à Premium</button>
+      </section>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
